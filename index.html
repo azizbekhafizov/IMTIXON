@@ -1,0 +1,521 @@
+<!-- Assalamu aleykum, IMTIHON uchun task
+
+shartlari:
+1. sayt berilgan figmaga birga bir o'xshashi talab qilinadi
+2. sayt har qanday qurilmaga moslashuvchan bo'lishi talab qilinadi (responsive)
+3. sass yoki scss da yozgish kerak
+4. styleda folder structure (7-1) foydalanish kerak
+5. mixins, o'zgaruvchilar, va boshqa codeni qisqartiruvchi toollardan foydalanish talab qilinadi
+6. DRY (Don't Repeat Yourself) birxel codelarni qayta qayta yozmang
+7. ma'noli nomda class yoki id bering
+8. ranglar, shriftlar, hajmlarni figmadan oling
+
+Diqqat !
+1. Ko'chirishga berganga ham, ko'chirganga ham 0 ball qo'yiladi
+2. AI yoki shunga o'xshash vositalardan foydalanib to'liq bajarilsa -25ball (illo ma'lum conceptsiyalar yoki syntaxni ko'rish mumkin)
+3. Deadline (berilgan muddatdan) har bir o'tkazib yuborilgan 5 daqiqa uchun -5ball
+4. taskni boshlaganingizda, boshlang'ich 1 soatini va oxirgi 1 soatini screen record qilish kerak (ekranni videoga yozib olish kerak)
+5. githubga push qilishi kerak
+6. vercel yoki netlifyda bo'lishi kerak
+7. erpga github, vercel, va folder.zip yuklanadi (ism familiya bilan) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast-Food</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo-img.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="loading1">
+      <span>Yuklanmoqda...</span>
+    </div>
+
+    <div id="loading2">
+      <span>Iltimos kuting...</span>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar_icon">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <div class="sidebar_elements">
+        <ul class="navlinks">
+          <li class="link">
+            <a class="nav-title title1" href="">Home</a>
+          </li>
+          <li class="link">
+            <a class="nav-title" href="">About us</a>
+          </li>
+          <li class="link">
+            <a class="nav-title" href="">Menu </a>
+          </li>
+          <li class="link">
+            <a class="nav-title" href="">Features </a>
+          </li>
+          <li class="link">
+            <a class="nav-title" href="">Contact us </a>
+          </li>
+        </ul>
+        <a href="" class="button-link">
+          <button>Booking Now</button>
+        </a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="navbar container">
+        <div class="left_head">
+          <img src="./assets/img/logo-img.png" alt="" />
+        </div>
+        <div class="right_head">
+          <ul class="navlinks">
+            <li class="link">
+              <a class="nav-title title1" href="">Home</a>
+            </li>
+            <li class="link">
+              <a class="nav-title" href="">About us</a>
+            </li>
+            <li class="link">
+              <a class="nav-title" href="">Menu </a>
+            </li>
+            <li class="link">
+              <a class="nav-title" href="">Features </a>
+            </li>
+            <li class="link">
+              <a class="nav-title" href="">Contact us </a>
+            </li>
+          </ul>
+          <a href="" class="button-link">
+            <button>Booking Now</button>
+          </a>
+        </div>
+        <div class="menu_icon">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section data-aos="zoom-in-down" class="home container">
+        <div class="home-left">
+          <h1 class="home-title">
+            Making time a good time by making food the good food.
+          </h1>
+          <p>
+            There are many things are needed to start the Fast Food Business.
+            You need not only Just Food Stalls with Persons but also specialized
+            equipment,
+          </p>
+          <div class="home-buttons">
+            <button class="btn1">Order Now</button>
+            <button class="btn2">Food Details</button>
+          </div>
+        </div>
+
+        <div class="home-right">
+          <img class="home-img" src="./assets/img/head-img.jpg" alt="" />
+        </div>
+      </section>
+
+      <section data-aos="zoom-out" class="passion">
+        <div class="passion-top">
+          <p class="main-paragrf">Features</p>
+          <h1 class="main-center-text">Food with a New Passion</h1>
+        </div>
+
+        <div class="passion-wrapper">
+          <div class="passion-card">
+            <div class="passion-img img1">
+              <img src="./assets/img/food1.png" alt="" />
+            </div>
+            <h3>Quality Food</h3>
+            <p>
+              It can be a very secure path to earn good money and make you very
+              successful creative entrepreneur.
+            </p>
+          </div>
+
+          <div class="passion-card">
+            <div class="passion-img img2">
+              <img src="./assets/img/food2.png" alt="" />
+            </div>
+            <h3>Food Delivery</h3>
+            <p>
+              It can be a very secure path to earn good money and make you very
+              successful creative entrepreneur..
+            </p>
+          </div>
+
+          <div class="passion-card">
+            <div class="passion-img img3">
+              <img src="./assets/img/food3.png" alt="" />
+            </div>
+            <h3>Super Taste</h3>
+            <p>
+              It can be a very secure path to earn good money and make you very
+              successful creative entrepreneur.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="about container"
+      >
+        <img src="./assets/img/about-img.png" alt="" class="about-img" />
+        <div class="about-text">
+          <h3 class="main-paragrf">About us</h3>
+          <h1 class="main-center-text">
+            Food Stalls with Persons but to Product marketing plane catlogues
+            etc to.
+          </h1>
+          <p>
+            There are many things are needed to start the Fast Food Business.
+            You need not only Just Food Stalls with Persons but also equipment
+            make your marketing plane Effective.
+          </p>
+          <button>Read More</button>
+        </div>
+      </section>
+
+      <section
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        class="full container"
+      >
+        <div class="full-top">
+          <h3 class="main-paragrf">Menu</h3>
+          <h1>Food Full of treaty Love</h1>
+          <p>
+            There are many things are needed to start the Fast Food Business.
+            You need not only Just Food Stalls with Persons but also specialized
+            equipment, Skills to manage Customers,
+          </p>
+        </div>
+
+        <div class="full-wrapper">
+          <div class="full-card card1">
+            <img src="./assets/img/full1.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Vegie Muffen</h1>
+              </div>
+              <div class="card-r">
+                <h1>16$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="full-card card2">
+            <img src="./assets/img/full2.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Salads</h1>
+              </div>
+              <div class="card-r">
+                <h1>12$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business..
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="full-card card3">
+            <img src="./assets/img/full3.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Burger</h1>
+              </div>
+              <div class="card-r">
+                <h1>10$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="full-card card4">
+            <img src="./assets/img/full4.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Delmonico Steak dish</h1>
+              </div>
+              <div class="card-r">
+                <h1>14$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="full-card card5">
+            <img src="./assets/img/full5.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Egg Masala</h1>
+              </div>
+              <div class="card-r">
+                <h1>9$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+          <div class="full-card card6">
+            <img src="./assets/img/full6.png" alt="" />
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <h1>Peach Melba dish</h1>
+              </div>
+              <div class="card-r">
+                <h1>15$</h1>
+              </div>
+            </div>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+            </p>
+
+            <div class="full-card-wrap">
+              <div class="card-l">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <div class="card-r">
+                <i class="fa-solid fa-star star1"></i>
+                <i class="fa-solid fa-star star2"></i>
+                <i class="fa-solid fa-star star3"></i>
+                <i class="fa-solid fa-star star4"></i>
+                <i class="fa-solid fa-star star5"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="more-btn">Learn More</button>
+      </section>
+
+      <section
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        class="take"
+      >
+        <div class="take-container container2">
+          <div class="take-left">
+            <h3 class="main-paragrf">Take away</h3>
+            <h1 class="main-center-text">
+              Food Stalls with Persons but to Product marketing plane.
+            </h1>
+            <p>
+              There are many things are needed to start the Fast Food Business.
+              You need not only Just Food Stalls with Persons but also
+              specialized equipmentwith Persons but also Just Food Stalls with
+              Persons.
+            </p>
+            <div class="take-buttons">
+              <button class="take-btn1">
+                <img src="./assets/img/apple 1.png" alt="" /> App Store
+              </button>
+              <button class="take-btn2">
+                <img src="./assets/img/gpgle-paly.png" alt="" /> Google Play
+              </button>
+            </div>
+          </div>
+          <img src="./assets/img/take-img.png" alt="" class="take-img" />
+        </div>
+      </section>
+
+      <section data-aos="zoom-in-down" class="making">
+        <div class="making-wrapper">
+          <div class="making-top">
+            <h3 class="main-paragrf">Testimonial</h3>
+            <h1 class="main-center-text">Making Food great again and again</h1>
+            <p>
+              You need not only Just Food Stalls with Persons but also
+              specialized equipment, Skills to manage Customers, Effective
+              Product catlogues etc to make your.
+            </p>
+          </div>
+
+          <div class="making-bottom">
+            <img class="making-img" src="./assets/img/girl-img.png" alt="" />
+            <p>
+              You need not only Just Food Stalls with Persons but also
+              specialized equipment, Skills to manage Customers, Effective
+              Product catlogues etc very successful to make your.
+            </p>
+            <div class="making-icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star star5"></i>
+            </div>
+
+            <h3>Augusta W. Reynoso</h3>
+            <h4>UI&UX DeSIGNER</h4>
+          </div>
+        </div>
+      </section>
+
+      <section data-aos="zoom-in-down" class="subscribe">
+        <h3 class="main-paragrf">Contact</h3>
+        <h1>
+          Food Stalls with Persons but also specialized equipment, Skills to
+          manage.
+        </h1>
+
+        <div class="input-box">
+          <input
+            type="text"
+            class="subscribe-input"
+            placeholder="Enter your message"
+          />
+          <button class="send-button">Send</button>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      class="footer"
+    >
+      <div class="footer-container container">
+        <div class="logo-section">
+          <img src="./assets/img/logo-img.png" alt="" />
+          <div class="logo-text">
+            <p>www.companyname.com</p>
+            <p>companyname@gmail.com</p>
+            <p>Phone: +7 485-118-03-25</p>
+          </div>
+        </div>
+
+        <div class="links">
+          <div class="column">
+            <h4>Home</h4>
+            <a href="#">Landingpage</a>
+            <a href="#">Documentation</a>
+            <a href="#">Referral Program</a>
+            <a href="#">UI & UX Design</a>
+            <a href="#">Web Design</a>
+          </div>
+
+          <div class="column">
+            <h4>Menu</h4>
+            <a href="#">Landingpage</a>
+            <a href="#">Documentation</a>
+            <a href="#">Referral Program</a>
+            <a href="#">UI & UX Design</a>
+            <a href="#">Web Design</a>
+          </div>
+
+          <div class="column">
+            <h4>Company</h4>
+            <a href="#">Landingpage</a>
+            <a href="#">Documentation</a>
+            <a href="#">Referral Program</a>
+            <div class="social-icons">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script defer src="./js/loading.js"></script>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

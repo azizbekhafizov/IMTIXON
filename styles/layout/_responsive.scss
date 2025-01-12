@@ -1,0 +1,124 @@
+@media (max-width: 1024px) {
+    .header {
+        .navbar {
+            .left_head {
+                h1 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .right_head {
+                justify-content: space-between;
+                width: 900px;
+                .navlinks {
+                    gap: 10px;
+                }
+                .link {
+                    font-size: 14px;
+
+                    a {
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        gap: 35px;
+        .home-left {
+            h1 {
+                width: 350px;
+                font-size: 2rem;
+                line-height: 40px;
+            }
+
+            p {
+                margin-top: 10px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .header {
+        .navbar {
+            justify-content: space-between;
+            .menu_icon {
+                display: block;
+            }
+            .right_head {
+                display: none;
+            }
+        }
+    }
+
+    .home {
+        flex-direction: column;
+
+        .home-left {
+            h1 {
+                width: 600px;
+                margin: auto;
+                text-align: center;
+            }
+
+            p {
+                width: 680px;
+                text-align: center;
+            }
+
+            .home-buttons {
+                margin: auto;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 25px;
+                button {
+                    margin: auto;
+                }
+            }
+        }
+
+        .home-right {
+            margin: auto;
+            margin-top: -80px;
+            .home-img {
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        .home-left {
+            h1 {
+                width: 370px;
+                font-size: 25px;
+            }
+
+            p {
+                width: 470px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        .home-left {
+            h1 {
+                width: 350px;
+            }
+            p {
+                width: 350px;
+                font-size: 14px;
+            }
+
+            .home-buttons {
+                flex-direction: column;
+            }
+        }
+    }
+}

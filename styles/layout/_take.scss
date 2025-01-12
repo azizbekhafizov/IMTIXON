@@ -1,0 +1,113 @@
+.take {
+    height: 518px;
+    margin-top: 220px;
+    width: 100%;
+    background-color: #fbf1e7;
+    .take-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .take-left {
+            h3 {
+                text-align: left;
+            }
+            h1 {
+                margin-top: 10px;
+                width: 535px;
+            }
+
+            p {
+                margin-top: 20px;
+                width: 555px;
+                font-weight: 400;
+                line-height: 24px;
+                font-size: 16px;
+            }
+
+            button {
+                margin-top: 30px;
+            }
+        }
+
+        .take-img {
+            margin-top: 45px;
+            width: 206px;
+            height: 417px;
+            box-shadow: #c1813d 0px 8px 50px 0px;
+            border-radius: 50px;
+
+            &:hover {
+                transform: translateY(-15px);
+                box-shadow: #c1813d 0px 20px 50px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .take {
+        .take-container {
+            .take-left {
+                h1 {
+                    width: 440px;
+                }
+
+                p {
+                    width: 440px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .take {
+        height: auto;
+
+        .take-img {
+            width: 215px;
+        }
+        .take-container {
+            flex-direction: column-reverse;
+
+            .take-left {
+                text-align: center;
+                margin: 50px auto;
+
+                h3 {
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .take {
+        .take-container {
+            .take-left {
+                h1 {
+                    width: 350px;
+                }
+
+                p {
+                    width: 350px;
+                    font-size: 14px;
+                }
+
+                .take-buttons {
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 25px auto;
+
+                    button {
+                        justify-content: center;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

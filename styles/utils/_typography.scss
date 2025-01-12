@@ -1,0 +1,40 @@
+.home-title {
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 57.6px;
+    color: var(--text-color);
+    width: 555px;
+    font-family: Philosopher;
+}
+
+.home-left {
+    p {
+        width: 555px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-color);
+    }
+}
+
+.main-paragrf {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
+    font-family: Roboto;
+    letter-spacing: 0.2em;
+}
+
+.main-center-text {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 40px;
+    font-family: Philosopher;
+    color: var(--text-color);
+}
+
+p {
+    font-family: Roboto;
+}
