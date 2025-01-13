@@ -23,6 +23,7 @@
   font-size: 16px;
   line-height: 18.75px;
   text-align: center;
+  width: 150px;
   font-family: Roboto;
   letter-spacing: 0.2em;
 }
@@ -585,6 +586,22 @@ button:hover {
     margin: auto;
   }
 }
+@media (max-width: 370px) {
+  .footer .footer-container .links {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .footer .footer-container .links h4 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .footer .footer-container .links a {
+    margin: 5px auto;
+    text-align: center;
+  }
+}
 #loading1 {
   position: fixed;
   top: 0;
@@ -676,8 +693,19 @@ button:hover {
 .home .home-left .home-buttons {
   max-width: 370px;
   width: 100%;
-  flex-wrap: wrap;
   margin-top: 30px;
+}
+@media (max-width: 480px) {
+  .home .home-left .home-buttons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .home .home-left .home-buttons button {
+    width: 200px;
+    height: 50px;
+  }
 }
 .home .home-left .home-buttons button {
   width: 158px;
@@ -688,12 +716,28 @@ button:hover {
   color: var(--button-color);
   border: 1px solid var(--button-color);
 }
+@media (max-width: 480px) {
+  .home .home-left .home-buttons .btn1 {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+}
 .home .home-left .home-buttons .btn2 {
   margin-left: 25px;
   background-color: transparent;
   color: black;
   border: 1px solid var(--button-color);
   color: var(--button-color);
+}
+@media (max-width: 480px) {
+  .home .home-left .home-buttons .btn2 {
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
 }
 .home .home-left .home-buttons .btn2:hover {
   background-color: var(--button-color);
@@ -717,6 +761,23 @@ button:hover {
     margin-top: 15px;
   }
 }
+@media (max-width: 370px) {
+  .home .home-left {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .home .home-left h1 {
+    margin: auto;
+    width: 300px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+  .home .home-left p {
+    width: 300px;
+  }
+}
 .home .home-right .home-img {
   width: 576px;
   height: 608px;
@@ -734,13 +795,23 @@ button:hover {
   .home .home-right .home-img {
     margin-top: 80px;
     width: 350px;
-    height: 420px;
+    height: 360px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .home .home-right .home-buttons {
-    flex-direction: column;
+}
+@media (max-width: 370px) {
+  .home .home-right .home-img {
+    margin-top: 80px;
+    width: 300px;
+    height: 310px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+}
+
+.home .home-left .home-title h1 {
+  width: 300px;
 }
 
 .passion .passion-top h1 {
@@ -904,6 +975,25 @@ button:hover {
     width: 350px;
   }
 }
+@media (max-width: 370px) {
+  .about .about-img {
+    width: 300px;
+    height: 260px;
+  }
+  .about .about-text h3 {
+    width: 100px;
+  }
+  .about .about-text h1 {
+    width: 300px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .about .about-text p {
+    width: 300px;
+    font-size: 12px;
+  }
+}
 .full {
   margin-top: 100px;
 }
@@ -1027,6 +1117,21 @@ button:hover {
     width: 350px;
   }
 }
+@media (max-width: 370px) {
+  .full .full-top h1 {
+    width: 300px;
+  }
+  .full .full-top p {
+    width: 300px;
+    font-size: 14px;
+  }
+  .full .full-wrapper .full-card {
+    width: 300px;
+  }
+  .full .full-wrapper .full-card img {
+    width: 300px;
+  }
+}
 .making {
   margin-top: 200px;
 }
@@ -1103,8 +1208,23 @@ button:hover {
   .making .making-wrapper .making-top p {
     width: 350px;
   }
+  .making .making-wrapper .making-top h3 {
+    margin: auto;
+    text-align: center;
+  }
   .making .making-wrapper .making-bottom p {
     width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .making .making-wrapper .making-top h1 {
+    width: 300px;
+  }
+  .making .making-wrapper .making-top p {
+    width: 300px;
+  }
+  .making .making-wrapper .making-bottom p {
+    width: 300px;
   }
 }
 .subscribe {
@@ -1190,6 +1310,22 @@ button:hover {
     font-size: 20px;
   }
 }
+@media (max-width: 370px) {
+  .subscribe h1 {
+    width: 300px;
+    font-size: 18px;
+  }
+  .subscribe .input-box {
+    width: 300px;
+  }
+  .subscribe .input-box .subscribe-input {
+    width: 300px;
+  }
+  .subscribe .input-box .send-button {
+    width: 80%;
+    height: 65px;
+  }
+}
 .take {
   height: 518px;
   margin-top: 220px;
@@ -1273,5 +1409,16 @@ button:hover {
   .take .take-container .take-left .take-buttons button {
     justify-content: center;
     margin: auto;
+  }
+}
+@media (max-width: 370px) {
+  .take .take-container .take-left h1 {
+    width: 300px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .take .take-container .take-left p {
+    width: 300px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

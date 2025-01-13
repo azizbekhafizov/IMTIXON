@@ -111,3 +111,22 @@
         }
     }
 }
+
+@media (max-width: 370px) {
+    .take{
+        .take-container{
+            .take-left{
+                h1{
+                    width: 300px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                p{
+                    width: 300px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

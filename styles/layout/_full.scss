@@ -165,3 +165,30 @@
         }
     }
 }
+
+@media (max-width: 370px) {
+    .full{
+        .full-top{
+            h1{
+                width: 300px;
+
+            }
+
+            p{
+                width: 300px;
+                font-size: 14px;
+            }
+        }
+
+        .full-wrapper{
+            .full-card{
+                width: 300px;
+
+                img{
+                    width: 300px;
+                }
+                
+            }
+        }
+    }
+}

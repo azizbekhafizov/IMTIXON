@@ -95,3 +95,26 @@
         }
     }
 }
+
+
+@media (max-width: 370px) {
+    .subscribe{
+        h1 {
+            width: 300px;
+            font-size: 18px;
+        }
+
+        .input-box{
+            width: 300px;
+
+            .subscribe-input{
+                width: 300px;
+            }
+
+            .send-button{
+                width: 80%;
+                height: 65px;
+            }
+        }
+    }
+}

@@ -99,11 +99,38 @@
                 p {
                     width: 350px;
                 }
+                h3{
+                    margin: auto;
+                    text-align: center;
+                }
             }
 
             .making-bottom {
                 p {
                     width: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .making{
+        .making-wrapper{
+            .making-top{
+                h1{
+                    width: 300px;
+
+                }
+
+                p{
+                    width: 300px;
+                }
+            }
+
+            .making-bottom{
+                p{
+                    width: 300px;
                 }
             }
         }
