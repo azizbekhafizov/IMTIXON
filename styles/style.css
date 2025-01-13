@@ -60,8 +60,13 @@ i {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
   color: black;
+}
+
+li {
+  cursor: pointer;
 }
 
 ul {
@@ -366,6 +371,10 @@ button {
   border-radius: 5px;
   background-color: var(--button-color);
   cursor: pointer;
+}
+button:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .button-link button {
@@ -1130,14 +1139,15 @@ button {
   outline: none;
   font-size: 16px;
   padding: 0 10px;
-  border-radius: 5px;
+  border-radius: 25px;
+  padding-left: 25px;
   color: #666;
 }
 .subscribe .input-box .send-button {
   background-color: #d87c1e;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 25px;
   height: 75px;
   width: 155px;
   font-size: 18px;

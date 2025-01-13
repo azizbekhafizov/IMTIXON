@@ -8,6 +8,11 @@ button {
     border-radius: 5px;
     background-color: var(--button-color);
     cursor: pointer;
+
+    &:hover{
+        transform: scale(1.2);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 }
 
 .button-link button {
