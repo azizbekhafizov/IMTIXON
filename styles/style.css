@@ -24,6 +24,7 @@
   line-height: 18.75px;
   text-align: center;
   width: 150px;
+  margin: auto;
   font-family: Roboto;
   letter-spacing: 0.2em;
 }
@@ -781,6 +782,9 @@ button:hover {
 .home .home-right .home-img {
   width: 576px;
   height: 608px;
+}
+.home .home-right .home-img:hover {
+  transform: scale(1.02);
 }
 @media (max-width: 1180px) {
   .home .home-right .home-img {
